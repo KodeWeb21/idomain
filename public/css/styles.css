@@ -49,11 +49,18 @@ body{
 }
 
 .btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
     background-color: var(--bg-color-btn);
     border: 0;
     border-radius: 3px;
     padding: 10px 25px;
-    margin: 30px 0;
+    margin: 30px auto;
+}
+
+.errormsg{
+    color: #FF6868;
 }
 
 .card{
