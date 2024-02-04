@@ -20,6 +20,10 @@
             <textarea type="text" class="form__input" placeholder="Write a brief description of your project"></textarea>
             <button class="btn">Generate domain using IA</button>
         </form>
+        <div class="card">
+            <span>MyDomain.es</span>
+            <img src="{{asset('assets/copy.svg')}}">
+        </div>
     </main>
 </body>
 </html>
