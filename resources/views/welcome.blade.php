@@ -18,12 +18,19 @@
         <h1 class="title">Generate Your Perfect Domain <span>With A Click</span></h1>
         <form class="form">
             <textarea type="text" class="form__input" placeholder="Write a brief description of your project"></textarea>
-            <button class="btn">Generate domain using IA</button>
+            <span class="errormsg"></span>
+            <button class="btn">
+                <img src="{{asset('assets/star.svg')}}" alt="">
+                <span>Generate domain using IA</span>
+            </button>
         </form>
-        <div class="card">
-            <span>MyDomain.es</span>
-            <img src="{{asset('assets/copy.svg')}}">
-        </div>
+        <template>
+            <div class="card">
+                <span>MyDomain.es</span>
+                <img src="{{asset('assets/copy.svg')}}">
+            </div>
+        </template>
     </main>
+    <script src="{{asset('js/scripts.js')}}"></script>
 </body>
 </html>
