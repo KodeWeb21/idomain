@@ -1,7 +1,9 @@
 :root{
     --bg-color: #000000;
     --color: #FFFFFF;
-    --bg-color-btn: #C8CC00;
+    --bg-color-btn: #faff00;
+    --bg-card: #FFFFFF;
+    --color-card: #000000;
 }
 
 body{
@@ -49,6 +51,17 @@ body{
 .btn{
     background-color: var(--bg-color-btn);
     border: 0;
+    border-radius: 3px;
     padding: 10px 25px;
-    margin: 20px 0;
+    margin: 30px 0;
+}
+
+.card{
+    background-color: var(--bg-card);
+    color: var(--color-card);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
 }
