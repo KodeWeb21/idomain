@@ -15,7 +15,7 @@
         <span class="header__text">IDomain</span>
     </header>
     <main class="main">
-        <h1 class="title">Generate Your Perfect Domain <span>With A Click</span></h1>
+        <h1 class="title">Generate Your Perfect Domain <span class="title__mark">With A Click</span></h1>
         <form class="form">
             <textarea type="text" class="form__input" placeholder="Write a brief description of your project"></textarea>
             <span class="errormsg"></span>

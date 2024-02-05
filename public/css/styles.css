@@ -31,7 +31,13 @@ body{
 .title{
     text-wrap: pretty;
     text-align: center;
-    margin: 30px 0
+    margin: 30px 0;
+}
+
+.title__mark{
+    background: linear-gradient( 175deg, #8E43AD, #F2C511 );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .form{
