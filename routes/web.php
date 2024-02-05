@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/domain',[domaincontroller::class,"domain"]);
+Route::post('/domain',[domaincontroller::class,"generateDomain"]);
