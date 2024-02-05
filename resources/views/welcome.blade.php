@@ -16,13 +16,15 @@
     </header>
     <main class="main">
         <h1 class="title">Generate Your Perfect Domain <span class="title__mark">With A Click</span></h1>
-        <form class="form">
-            <textarea type="text" class="form__input" placeholder="Write a brief description of your project"></textarea>
+        <form class="form" action="/domain" method="POST">
+            <textarea type="text" class="form__input" placeholder="Write a brief description of your project" name="description"></textarea>
             <span class="errormsg"></span>
             <button class="btn">
                 <span>Generate Domain</span>
                 <img src="{{asset('assets/star.svg')}}" alt="">
             </button>
+            <input type="hidden" name="_token" id="token" value="{{csrf_token()}}">
+            <!-- @csrf -->
         </form>
         <template>
             <div class="card">
