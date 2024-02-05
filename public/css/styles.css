@@ -17,6 +17,10 @@ body{
     margin: 15px;
 }
 
+.main{
+    margin-top: 50px
+}
+
 .header{
     display: flex;
     align-items: center;
