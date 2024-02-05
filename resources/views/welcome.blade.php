@@ -20,8 +20,8 @@
             <textarea type="text" class="form__input" placeholder="Write a brief description of your project"></textarea>
             <span class="errormsg"></span>
             <button class="btn">
-                <img src="{{asset('assets/star.svg')}}" alt="">
                 <span>Generate domain using IA</span>
+                <img src="{{asset('assets/star.svg')}}" alt="">
             </button>
         </form>
         <template>
