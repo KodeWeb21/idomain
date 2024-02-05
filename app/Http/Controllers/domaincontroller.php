@@ -12,5 +12,13 @@ class domaincontroller extends Controller
                 "description"=>"required|min:3|filled"
             ]
         ); 
+        $description = $req->description;
+        $messageTest = json_encode(
+            [
+                "domains" => ["MyDomain.es","Lolos.com","other.do"],
+                "message_send" => $description
+            ]
+            );
+        echo $messageTest;
     }   
 }
