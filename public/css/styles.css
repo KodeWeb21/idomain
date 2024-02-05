@@ -35,7 +35,7 @@ body{
 }
 
 .title__mark{
-    background: linear-gradient( 175deg, #8E43AD, #F2C511 );
+    background: linear-gradient( 172deg, #b910ff, #F2C511 );
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
