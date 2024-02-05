@@ -2,6 +2,7 @@ const btn = document.querySelector('.btn');
 const inputUser = document.querySelector('.form__input');
 const form = document.querySelector('.form');
 let messageError = false;
+const csrfInput = document.getElementById("token");
 const errormsg = document.querySelector(".errormsg");
 
 const drawError = (error) =>{
@@ -28,14 +29,26 @@ const validateInput = (inputValue) =>{
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
     const inputvalue = inputUser.value;
-    console.log(inputvalue);
     const isvalidate = validateInput(inputvalue)
    if(!isvalidate){
         drawError(messageError);
         return;
    }
-
    if(messageError) deleteError();
    
-   console.log("Todo bien con el input")
+   const formData = new FormData(form);
+   getData("/domain",formData);
 })
+
+const getData = async (url,data) =>{
+    const response = await fetch(url,{
+        method: "POST",
+        body: data,
+        headers: {
+            "X-CSRF-TOKEN": token.value,
+        }
+    });
+
+    const domains = await response.json();
+    console.log(domains);
+}
