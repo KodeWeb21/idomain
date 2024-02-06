@@ -18,13 +18,14 @@ body{
 }
 
 .main{
-    margin-top: 50px
+    margin-top: 50px;
 }
 
 .header{
     display: flex;
     align-items: center;
     gap: 10px;
+    max-width: 1500px;
 }
 
 .header__text,
@@ -126,4 +127,20 @@ body{
 
   .loader--hidden{
     display: none;
+  }
+
+  @media screen and (min-width: 768px){
+    .main{
+        max-width: 700px;
+    }
+
+    .header,
+    .main{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .header{
+        padding: 0 15px;
+    }
   }
