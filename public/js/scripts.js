@@ -4,6 +4,8 @@ const form = document.querySelector('.form');
 let messageError = false;
 const csrfInput = document.getElementById("token");
 const errormsg = document.querySelector(".errormsg");
+const templateCard = document.querySelector(".template");
+const main = document.querySelector(".main");
 
 const drawError = (error) =>{
     errormsg.textContent = error;
@@ -11,6 +13,20 @@ const drawError = (error) =>{
 
 const deleteError = () =>{
     errormsg.textContent = "";
+}
+
+const traverseDomains = ({domains}) =>{
+    const fragment = document.createDocumentFragment();
+    domains.forEach(domain => drawDomainsCards(domain,fragment));
+    domains.forEach(domain => console.log(domain));
+    main.appendChild(fragment);
+}
+
+const drawDomainsCards = (domain, fragment) =>{
+    const cardClone = templateCard.content.cloneNode(true);
+    const cardText = cardClone.querySelector('.card__text');
+    cardText.textContent = domain;
+    fragment.appendChild(cardClone);
 }
 
 const validateInput = (inputValue) =>{
@@ -50,5 +66,5 @@ const getData = async (url,data) =>{
     });
 
     const domains = await response.json();
-    console.log(domains);
+    traverseDomains(domains);
 }
