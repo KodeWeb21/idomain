@@ -7,7 +7,7 @@ const errormsg = document.querySelector(".errormsg");
 const templateCard = document.querySelector(".template");
 const domainsContainer = document.querySelector(".domainscontainer");
 const loader = document.querySelector(".loader");
-
+let copyStatus = false;
 const activeLoader = () =>{
     loader.classList.remove("loader--hidden");
 }
@@ -27,7 +27,6 @@ const deleteError = () =>{
 const traverseDomains = ({domains}) =>{
     const fragment = document.createDocumentFragment();
     domains.forEach(domain => drawDomainsCards(domain,fragment));
-    domains.forEach(domain => console.log(domain));
     domainsContainer.appendChild(fragment);
 }
 
@@ -86,3 +85,37 @@ const getData = async (url,data) =>{
     disableLoading();
     traverseDomains(domains);
 }
+
+const copyElement = async (textCopy) =>{
+    if(textCopy.trim() === "") return
+    try{
+        await navigator.clipboard.writeText(textCopy);
+    }catch(error){
+        throw new Error("No se pudo copiar el texto al portapapeles");
+    }
+}
+
+const activeMessageCopy = (element) =>{
+    element.classList.remove("copy--hidden")
+}
+
+const disabledMessageCopy = (element) =>{
+    setTimeout(()=>{
+        element.classList.add("copy--hidden");
+        copyStatus = false;
+    },1000)
+}
+
+domainsContainer.addEventListener('click',(e)=>{
+    const element = e.target;
+    if(element.matches(".copy__btn") || element.matches(".copy__btn > *")){
+      if(copyStatus) return;
+      copyStatus = true;
+      const card = element.parentElement.parentElement;
+      const copyText = element.previousElementSibling;
+      const cardText = card.querySelector(".card__text").textContent;
+      copyElement(cardText);
+      activeMessageCopy(copyText);
+      disabledMessageCopy(copyText)    
+    }
+})

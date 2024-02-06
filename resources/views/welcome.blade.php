@@ -31,7 +31,10 @@
        <template class="template">
             <div class="card">
                 <span class="card__text">MyDomain.es</span>
-                <img src="{{asset('assets/copy.svg')}}">
+                <div class="copy">
+                    <span class="copy__text copy--hidden">Copied to clipboard</span>
+                    <img src="{{asset('assets/copy.svg')}}" class="copy__btn">
+                </div>
             </div>
         </template>
         <span class="loader loader--hidden"></span>

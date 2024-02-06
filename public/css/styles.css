@@ -131,6 +131,25 @@ body{
     display: none;
   }
 
+  .copy__btn{
+    cursor: pointer;
+    transition: transform .2s ease;
+  }
+
+  .btn-copy:active{
+    transform: scale(1.2);
+  }
+
+  .copy{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .copy--hidden{
+    display:none;
+  }
+
   @media screen and (min-width: 768px){
     .main{
         max-width: 700px;
