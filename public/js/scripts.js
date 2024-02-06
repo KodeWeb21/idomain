@@ -5,7 +5,7 @@ let messageError = false;
 const csrfInput = document.getElementById("token");
 const errormsg = document.querySelector(".errormsg");
 const templateCard = document.querySelector(".template");
-const main = document.querySelector(".main");
+const domainsContainer = document.querySelector(".domainscontainer");
 
 const drawError = (error) =>{
     errormsg.textContent = error;
@@ -19,7 +19,7 @@ const traverseDomains = ({domains}) =>{
     const fragment = document.createDocumentFragment();
     domains.forEach(domain => drawDomainsCards(domain,fragment));
     domains.forEach(domain => console.log(domain));
-    main.appendChild(fragment);
+    domainsContainer.appendChild(fragment);
 }
 
 const drawDomainsCards = (domain, fragment) =>{
@@ -27,6 +27,12 @@ const drawDomainsCards = (domain, fragment) =>{
     const cardText = cardClone.querySelector('.card__text');
     cardText.textContent = domain;
     fragment.appendChild(cardClone);
+}
+
+const deleteOldDomains = () =>{
+    const numberOfDomains = domainsContainer.childElementCount;
+    if(numberOfDomains <= 0) return;
+    domainsContainer.innerHTML = "";
 }
 
 const validateInput = (inputValue) =>{
@@ -51,7 +57,8 @@ form.addEventListener('submit',(e)=>{
         return;
    }
    if(messageError) deleteError();
-   
+
+   deleteOldDomains();
    const formData = new FormData(form);
    getData("/domain",formData);
 })

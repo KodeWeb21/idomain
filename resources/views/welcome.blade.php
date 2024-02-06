@@ -26,7 +26,9 @@
             <input type="hidden" name="_token" id="token" value="{{csrf_token()}}">
             <!-- @csrf -->
         </form>
-        <template class="template">
+       <div class="domainscontainer">
+       </div>
+       <template class="template">
             <div class="card">
                 <span class="card__text">MyDomain.es</span>
                 <img src="{{asset('assets/copy.svg')}}">
