@@ -58,6 +58,7 @@ body{
     padding: 15px;
     box-sizing: border-box;
     outline: 0;
+    font-size: 1rem;
 }
 
 .btn{
