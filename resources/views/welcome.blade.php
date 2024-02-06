@@ -34,6 +34,7 @@
                 <img src="{{asset('assets/copy.svg')}}">
             </div>
         </template>
+        <span class="loader loader--hidden"></span>
     </main>
     <script src="{{asset('js/scripts.js')}}"></script>
 </body>

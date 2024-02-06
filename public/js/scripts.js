@@ -6,6 +6,15 @@ const csrfInput = document.getElementById("token");
 const errormsg = document.querySelector(".errormsg");
 const templateCard = document.querySelector(".template");
 const domainsContainer = document.querySelector(".domainscontainer");
+const loader = document.querySelector(".loader");
+
+const activeLoader = () =>{
+    loader.classList.remove("loader--hidden");
+}
+
+const disableLoading = () =>{
+    loader.classList.add("loader--hidden");
+}
 
 const drawError = (error) =>{
     errormsg.textContent = error;
@@ -59,6 +68,7 @@ form.addEventListener('submit',(e)=>{
    if(messageError) deleteError();
 
    deleteOldDomains();
+   activeLoader();
    const formData = new FormData(form);
    getData("/domain",formData);
 })
@@ -73,5 +83,6 @@ const getData = async (url,data) =>{
     });
 
     const domains = await response.json();
+    disableLoading();
     traverseDomains(domains);
 }
