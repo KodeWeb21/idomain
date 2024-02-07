@@ -15,6 +15,7 @@ body{
 .header,
 .main{
     margin: 15px;
+    min-width: 314px;
 }
 
 .main{
