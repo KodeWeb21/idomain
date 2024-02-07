@@ -32,7 +32,7 @@
             <div class="card">
                 <span class="card__text">MyDomain.es</span>
                 <div class="copy">
-                    <span class="copy__text copy--hidden">Copied to clipboard</span>
+                    <span class="copy__text copy--hidden">Copied</span>
                     <img src="{{asset('assets/copy.svg')}}" class="copy__btn">
                 </div>
             </div>
