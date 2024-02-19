@@ -4,6 +4,7 @@
     --bg-color-btn: #faff00;
     --bg-card: #FFFFFF;
     --color-card: #000000;
+    --color-footer: #c3c3c3;
 }
 
 body{
@@ -93,15 +94,28 @@ body{
 
 
 .footer{
-  margin-top: 40vh;
+  margin-top: 100vh;
+  color: var(--color-footer);
 }
+
+.nav__item:hover{
+  color: white;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
 .nav__list{
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  gap: 10px;
+  gap: 20px;
+  margin-top: 30px;
   padding: 0;
-  text-align: center;
 }
 
 .nav__item a,
