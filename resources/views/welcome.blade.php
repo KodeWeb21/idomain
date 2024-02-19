@@ -10,10 +10,7 @@
     <link rel="stylesheet" href="{{asset('css/styles.css')}}">
 </head>
 <body>
-    <header class="header">
-        <img src="{{asset('assets/logo.svg')}}" alt="">
-        <span class="header__text">IDomain</span>
-    </header>
+    @include('header')
     <main class="main">
         <h1 class="title">Generate Your Perfect Domain <span class="title__mark">With A Click</span></h1>
         <form class="form" action="/domain" method="POST">

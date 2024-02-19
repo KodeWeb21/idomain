@@ -12,10 +12,7 @@
 </head>
 
 <body>
-    <header class="header">
-        <img src="{{asset('assets/logo.svg')}}" alt="">
-        <span class="header__text">IDomain</span>
-    </header>
+   @include('header')
     <main class="main">
         <h1 class="title">Privacy</h1>
         <div class="box">
