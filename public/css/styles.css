@@ -106,6 +106,17 @@ body{
   text-decoration: none;
 }
 
+.box{
+  background-color: var(--bg-card);
+  color: var(--color-card);
+  padding: 1.8rem;
+  border-radius: 5px;
+}
+
+.title--center{
+  text-align: center;
+}
+
 .loader {
     display: block;
     margin: 90px auto;

@@ -19,3 +19,7 @@ Route::get('/', function () {
 });
 
 Route::post('/domain',[domaincontroller::class,"generateDomain"]);
+
+Route::get('/privacy',function(){
+    return view('privacy');
+});
