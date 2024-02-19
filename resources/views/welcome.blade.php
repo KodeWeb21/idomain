@@ -38,6 +38,7 @@
             </div>
         </template>
         <span class="loader loader--hidden"></span>
+        @include('footer')
     </main>
     <script src="{{asset('js/scripts.js')}}"></script>
 </body>
