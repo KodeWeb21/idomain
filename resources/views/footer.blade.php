@@ -8,7 +8,7 @@
                 <a href="/privacy">Privacy</a>
             </li>
             <li class="nav__item">
-                <a href="">Terms and Conditions</a>
+                <a href="/terms-conditions">Terms and Conditions</a>
             </li>
             <li class="nav__item">
                 <a href="">Tips for creating domains</a>

@@ -23,3 +23,7 @@ Route::post('/domain',[domaincontroller::class,"generateDomain"]);
 Route::get('/privacy',function(){
     return view('privacy');
 });
+
+Route::get('/terms-conditions',function(){
+    return view('terms');
+});
