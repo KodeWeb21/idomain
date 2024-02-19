@@ -20,19 +20,19 @@
         <h1 class="title">Privacy</h1>
         <div class="box">
             <p>
-                En IDoamin, valoramos profundamente tu privacidad y nos comprometemos a protegerla en todo momento. Esta política de privacidad explica cómo recopilamos, utilizamos y protegemos la información personal que puedas proporcionarnos a través de nuestro sitio web.
+                At IDoamin, we deeply value your privacy and are committed to protecting it at all times. This privacy policy explains how we collect, use and protect the personal information you may provide to us through our website.
             </p>
-            <h2>Recopilación de Información</h2>
+            <h2>Information Collection</h2>
             <p>
-                Cuando utilizas nuestro servicio para generar nombres de dominio, es posible que recopilemos cierta información personal, como tu dirección de correo electrónico o datos de contacto. Sin embargo, esta información se recopila únicamente con tu consentimiento y se utiliza exclusivamente para mejorar tu experiencia en nuestro sitio web y proporcionarte un mejor servicio.
+                When you use our service to generate domain names, we may collect certain personal information, such as your email address or contact information. However, this information is collected only with your consent and is used solely to improve your experience on our website and provide you with better service.
             </p>
-            <h2>Cookies y Tecnologías Similares</h2>
+            <h2>Cookies and Similar Technologies</h2>
             <p>
-                Podemos utilizar cookies y otras tecnologías similares para recopilar cierta información sobre tu actividad en nuestro sitio web. Estas tecnologías nos ayudan a mejorar nuestro servicio y a proporcionarte una experiencia más personalizada. Puedes gestionar tus preferencias de cookies a través de la configuración de tu navegador.
+                We may use cookies and other similar technologies to collect certain information about your activity on our website. These technologies help us improve our service and provide you with a more personalized experience. You can manage your cookie preferences through your browser settings.
             </p>
-            <h2>Cambios en la Política de Privacidad</h2>
+            <h2>Changes in the Privacy Policy</h2>
             <p>
-                Nos reservamos el derecho de actualizar o modificar esta política de privacidad en cualquier momento y sin previo aviso. Te recomendamos que revises periódicamente esta página para estar al tanto de cualquier cambio. El uso continuado de nuestro sitio web después de la publicación de cambios en esta política se considerará como tu aceptación de dichos cambios.
+                We reserve the right to update or modify this privacy policy at any time without notice. We encourage you to periodically review this page to be aware of any changes. Your continued use of our website following the posting of changes to this policy will be deemed your acceptance of those changes.
             </p>
         </div>
         @include('footer')
