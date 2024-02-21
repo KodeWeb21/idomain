@@ -27,3 +27,7 @@ Route::get('/privacy',function(){
 Route::get('/terms-conditions',function(){
     return view('terms');
 });
+
+Route::get('/frequently-questions',function(){
+    return view('frequently-questions');
+});

@@ -6,7 +6,7 @@
         </a>
         <ul class="nav__list">
             <li class="nav__item">
-                <a href="">Frequently Asked Questions</a>
+                <a href="/frequently-questions">Frequently Asked Questions</a>
             </li>
             <li class="nav__item">
                 <a href="/privacy">Privacy</a>
