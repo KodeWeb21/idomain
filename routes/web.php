@@ -31,3 +31,7 @@ Route::get('/terms-conditions',function(){
 Route::get('/frequently-questions',function(){
     return view('frequently-questions');
 });
+
+Route::get('/tips-creating-domains',function(){
+    return view('tips-for-domains');
+});

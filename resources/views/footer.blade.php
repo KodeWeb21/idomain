@@ -15,7 +15,7 @@
                 <a href="/terms-conditions">Terms and Conditions</a>
             </li>
             <li class="nav__item">
-                <a href="">Tips for creating domains</a>
+                <a href="tips-creating-domains">Tips for creating domains</a>
             </li>
         </ul>
     </nav>
