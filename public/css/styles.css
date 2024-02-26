@@ -168,6 +168,10 @@ body{
   font-weight: 400;
 }
 
+.question__body{
+     line-height: 1.8;
+}
+
   @keyframes mulShdSpin {
     0%,
     100% {
