@@ -35,3 +35,7 @@ Route::get('/frequently-questions',function(){
 Route::get('/tips-creating-domains',function(){
     return view('tips-for-domains');
 });
+
+Route::get('/blog/List-domain-extensions-by-country',function(){
+    return view('blog.extensions-country');
+});
