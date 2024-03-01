@@ -3,6 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generate your perfect domain name with a click. free domain name generator with artificial intelligence">
+    <meta name="keywords" content="Generator Domain, Domain with ia, Free Domain Generator">
+    <meta property="og:title" content="Free Domain Name Generator">
+    <meta property="og:description" content="Generate Your Perfect Domain With A Click">
+    <meta property="og:image" content="https://i.imgur.com/xYoyD1G.png">
+    <meta property="og:image:alt" content="iDomain website icon">
+
+    <meta name="twitter:title" content="iDomain">
+    <meta name="twitter:description" content="Generate Your Perfect Domain With A Click">
+    <meta name="twitter:image:src" content="https://i.imgur.com/xYoyD1G.png">
+    <meta name="twitter:image:alt" content="iDomain website icon">
+    <meta name="twitter:creator" content="@BryantScript">
     <title>IDomain</title>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
